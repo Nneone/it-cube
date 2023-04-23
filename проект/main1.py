@@ -7,25 +7,43 @@ while True:
     try:
         print("Введите как изменить изображение: ")
         num = int(input())
+
+
         if num == 1:
             print("Выберите контрастность Изображения от 1 до 100: ")
             user = int(input())
             a = user >= 0 or user <= 100
-            print("Изображение изменилось)")
+            
+        
+
+
         if num == 2:
             print("Выберите яркость Изображения от 1 до 100: ")
-            user2 = int(input())
-            b = user2 >= 0 or user2 <= 100
-            print("Изображение изменилось)")
+            user = int(input())
+            b = user >= 0 or user <= 100
+            
+     
+
+
         if num == 3:
             print("Выберите размытость Изображения от 1 до 100: ")
-            user3 = int(input())
-            c = user3 >= 0 or user3 <= 100
-            print("Изображение изменилось)")    
-        else:     
-            print("Eror!") 
-        break
-    
+            user = int(input())
+            c = user >= 0 or user <= 100
+            
+
+            
+
+        if user > 100:
+            print("Erorr! Не может быть значение больше 100")
+             
+
+
+
+        if user < 100:
+            print("Изображение изменилось)")
+
+
+
+            break
     except ValueError:
         print("Oops! Выберите из трех перечисленных вариантов")
-    
