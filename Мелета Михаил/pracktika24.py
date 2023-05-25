@@ -1,0 +1,10 @@
+city = input()
+city2 = input()
+city3 = input()
+a = len(city)
+b = len(city2)
+c = len(city3)
+
+d = max(a, b, c)
+e = min(a, b, c)
+print(d, e)
