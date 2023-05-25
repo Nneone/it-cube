@@ -1,0 +1,8 @@
+num = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+num5 = int(input())
+mx = max(num, num2, num3, num4, num5)
+mn = min(num, num2, num3, num4, num5)
+print(mx, mn)
